@@ -20,8 +20,8 @@
         <selenium.version>3.141.59</selenium.version>
         <spring.version>5.3.0</spring.version>
         <cucumber.version>5.4.0</cucumber.version>
-        <junit.version>4.11</junit.version>
         <cucumber.jvm.deps.version>1.0.6</cucumber.jvm.deps.version>
+        <awaitility.version>2.0.0</awaitility.version>
         <failsafe.version>2.22.2</failsafe.version>
         <surefire.version>2.22.2</surefire.version>
         <hamcrest.java.version>2.0.0.0</hamcrest.java.version>
@@ -114,6 +114,11 @@
             <artifactId>java-hamcrest</artifactId>
             <version>${hamcrest.java.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.awaitility</groupId>
+            <artifactId>awaitility</artifactId>
+            <version>${awaitility.version}</version>
         </dependency>
     </dependencies>
 </project>

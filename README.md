@@ -6,6 +6,7 @@ Simple UI test automation in Java, using:
 - Cucumber
 - Selenium
 - Failsafe plugin
+- Awaitility
 - Page Object Pattern with page factory
 - WebDriverFactory pattern
 - WebDriver manager
