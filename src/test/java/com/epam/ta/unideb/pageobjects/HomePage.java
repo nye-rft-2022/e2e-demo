@@ -13,7 +13,25 @@ public class HomePage extends CommonPageObject {
     @FindBy(css = "header li:nth-child(5) > a")
     private WebElement registrationButton;
 
+    @FindBy(id = "onetrust-accept-btn-handler")
+    private WebElement cookieDisclaimer;
+
     public HomePage(final WebDriverFactory factory) {
         super(factory);
+    }
+
+    public void navigateToHomePage() {
+        navigateToUrl(HOME_PAGE_URL);
+    }
+
+    public void clickOnRegistrationButton() {
+        waitForElementToBeClickable(registrationButton);
+        registrationButton.click();
+        waitForPageReadiness();
+    }
+
+    public void clickOnCookieDisclaimer() {
+        waitForElementToBeClickable(cookieDisclaimer);
+        clickWithJsExecutor(cookieDisclaimer);
     }
 }
