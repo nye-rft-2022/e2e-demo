@@ -24,3 +24,7 @@ Supported arguments:
 
 Example command to run tests with FireFox Driver in headless mode:
 mvn clean verify -DbrowserName=firefox -Dheadless=true
+
+You can also add -Dcucumber.filter.tags=@tagName.
+Where "tagName" should be some custom tag you define.
+With this parameter, only those scenarios will run that have this tag written before them in the feature files.

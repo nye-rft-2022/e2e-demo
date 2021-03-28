@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features",
     glue = "com.epam.ta.unideb",
-    plugin = "pretty"
+    plugin = {"pretty", "com.epam.reportportal.cucumber.StepReporter"}
 )
 public class TestRunnerIT {
 
