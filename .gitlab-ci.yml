@@ -1,0 +1,5 @@
+image: markhobson/maven-chrome:jdk-11
+
+test:
+  script:
+    - mvn clean verify -DbrowserName=chrome -Dheadless=true
