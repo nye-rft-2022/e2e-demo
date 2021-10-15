@@ -29,10 +29,6 @@ Feature: Spotify sign up page
       | Add meg az e-mail címed. | asd       | Érvénytelen e-mail-cím. Érvényes e-mail-cím formátuma: pelda@email.com |
       | Add meg az e-mail címed. | 123       | Érvénytelen e-mail-cím. Érvényes e-mail-cím formátuma: pelda@email.com |
       | Adj meg egy jelszót.     | aaa       | A jelszavad túl rövid.                                                 |
-      | ÉÉÉÉ                     | 2020      | Sajnáljuk, de még nem vagy elég idős a Spotify használatához.          |
-      | ÉÉÉÉ                     | 1500      | Érvényes formátumban add meg az évet.                                  |
-      | NN                       | -1        | Érvényes formátumban add meg a napot.                                  |
-      | NN                       | 32        | Érvényes formátumban add meg a napot.                                  |
 
   Scenario: Check email field with valid, but already existing email
     When the 'Add meg az e-mail címed.' is filled in with 'spotifytest@asd.com'
