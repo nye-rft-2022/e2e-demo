@@ -1,6 +1,6 @@
-package com.epam.ta.unideb.stepdefinitions;
+package com.epam.ta.uni.stepdefinitions;
 
-import static com.epam.ta.unideb.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
+import static com.epam.ta.uni.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,9 +13,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
-import com.epam.ta.unideb.config.TestConfig;
-import com.epam.ta.unideb.pageobjects.HomePage;
-import com.epam.ta.unideb.pageobjects.SignUpPage;
+import com.epam.ta.uni.config.TestConfig;
+import com.epam.ta.uni.pageobjects.HomePage;
+import com.epam.ta.uni.pageobjects.SignUpPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;

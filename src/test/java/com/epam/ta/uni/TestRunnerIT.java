@@ -1,4 +1,4 @@
-package com.epam.ta.unideb;
+package com.epam.ta.uni;
 
 import org.junit.runner.RunWith;
 
@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/features",
-    glue = "com.epam.ta.unideb",
+    glue = "com.epam.ta.uni",
     plugin = {"pretty", "com.epam.reportportal.cucumber.StepReporter"}
 )
 public class TestRunnerIT {

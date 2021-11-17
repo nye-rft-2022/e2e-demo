@@ -1,6 +1,6 @@
-package com.epam.ta.unideb.pageobjects;
+package com.epam.ta.uni.pageobjects;
 
-import static com.epam.ta.unideb.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
+import static com.epam.ta.uni.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.epam.ta.unideb.factory.WebDriverFactory;
+import com.epam.ta.uni.factory.WebDriverFactory;
 
 public class CommonPageObject {
 

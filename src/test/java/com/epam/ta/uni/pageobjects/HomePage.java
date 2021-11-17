@@ -1,10 +1,10 @@
-package com.epam.ta.unideb.pageobjects;
+package com.epam.ta.uni.pageobjects;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.springframework.stereotype.Component;
 
-import com.epam.ta.unideb.factory.WebDriverFactory;
+import com.epam.ta.uni.factory.WebDriverFactory;
 
 @Component
 public class HomePage extends CommonPageObject {

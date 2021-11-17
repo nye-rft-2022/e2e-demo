@@ -1,6 +1,6 @@
-package com.epam.ta.unideb.factory;
+package com.epam.ta.uni.factory;
 
-import static com.epam.ta.unideb.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
+import static com.epam.ta.uni.config.TestConfig.PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS;
 
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
