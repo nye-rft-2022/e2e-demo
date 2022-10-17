@@ -8,7 +8,7 @@ import com.epam.ta.uni.factory.WebDriverFactory;
 
 @Component
 public class HomePage extends CommonPageObject {
-    private static final String HOME_PAGE_URL = "https://www.spotify.com/hu/";
+    private static final String HOME_PAGE_URL = "https://open.spotify.com/";
 
     @FindBy(css = "header li:nth-child(5) > a")
     private WebElement registrationButton;
