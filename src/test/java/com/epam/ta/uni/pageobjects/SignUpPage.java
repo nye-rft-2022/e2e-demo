@@ -1,6 +1,7 @@
 package com.epam.ta.uni.pageobjects;
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,11 +31,11 @@ public class SignUpPage extends CommonPageObject {
     private WebElement dayInput;
 
     private final Map<String, WebElement> inputFieldsMap = Map.of(
-        "Add meg az e-mail címed.", emailInput,
-        "Írd be újra az e-mail-címed.", confirmEmailInput,
-        "Adj meg egy jelszót.", passwordInput,
-        "ÉÉÉÉ", yearInput,
-        "NN", dayInput
+            "Enter your email.", emailInput,
+            "Enter your email again.", confirmEmailInput,
+            "Create a password.", passwordInput,
+            "YYYY", yearInput,
+            "DD", dayInput
     );
 
     public SignUpPage(final WebDriverFactory factory) {
@@ -48,6 +49,7 @@ public class SignUpPage extends CommonPageObject {
     }
 
     public WebElement getInputFieldByName(final String name) {
+        getWebDriverFromFactory().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return inputFieldsMap.get(name);
     }
 }
