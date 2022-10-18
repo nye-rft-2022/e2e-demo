@@ -39,7 +39,7 @@ public class SpotifySignupStepDefs {
         homePage.clickOnCookieDisclaimer();
     }
 
-    @And("the Regisztráció header button is clicked")
+    @And("the Registration header button is clicked")
     public void theRegistrationHeaderButtonIsClicked() {
         homePage.clickOnRegistrationButton();
     }
@@ -49,7 +49,7 @@ public class SpotifySignupStepDefs {
         signUpPage.scrollToTheBottomOfThePage();
     }
 
-    @When("the Regisztráció button is clicked")
+    @When("the Registration button is clicked")
     public void theRegistrationButtonIsClicked() {
         signUpPage.clickOnRegistrationButton();
     }
