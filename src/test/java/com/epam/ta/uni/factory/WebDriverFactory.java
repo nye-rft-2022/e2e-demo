@@ -46,7 +46,7 @@ public class WebDriverFactory {
             }
         }
 
-        webDriver.manage().window().setSize(new Dimension(1920, 1080));
+        webDriver.manage().window().maximize();
         webDriver.manage().timeouts().pageLoadTimeout(PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS, TimeUnit.SECONDS);
 
         return webDriver;

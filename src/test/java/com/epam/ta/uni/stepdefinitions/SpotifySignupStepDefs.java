@@ -39,7 +39,7 @@ public class SpotifySignupStepDefs {
         homePage.clickOnCookieDisclaimer();
     }
 
-    @And("the Regisztráció header button is clicked")
+    @And("the Registration header button is clicked")
     public void theRegistrationHeaderButtonIsClicked() {
         homePage.clickOnRegistrationButton();
     }
@@ -49,7 +49,7 @@ public class SpotifySignupStepDefs {
         signUpPage.scrollToTheBottomOfThePage();
     }
 
-    @When("the Regisztráció button is clicked")
+    @When("the Registration button is clicked")
     public void theRegistrationButtonIsClicked() {
         signUpPage.clickOnRegistrationButton();
     }
@@ -59,7 +59,7 @@ public class SpotifySignupStepDefs {
         Awaitility.await(String.format("Element was not loaded in %s seconds", PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS))
             .atMost(new Duration(PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS, TimeUnit.SECONDS))
             .until(() -> signUpPage.getWebDriverFromFactory().findElements(
-                By.xpath(String.format("//div[text()='%s' or ./span[text()='%s']]", message, message))
+                By.xpath(String.format("//div[text()=\"%s\" or ./span[text()=\"%s\"]]", message, message))
                 ).size(),
                 Matchers.is(1));
     }
