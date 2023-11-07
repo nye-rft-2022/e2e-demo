@@ -12,10 +12,10 @@ import com.epam.ta.uni.factory.WebDriverFactory;
 @Component
 public class SignUpPage extends CommonPageObject {
 
-    @FindBy(css = ".EmailForm__Center-jwtojv-0 > div")
+    @FindBy(css = "span.ButtonInner-sc-14ud5tc-0.bhKQRg.encore-bright-accent-set")
     private WebElement registrationButton;
 
-    @FindBy(id = "email")
+    @FindBy(id = "username")
     private WebElement emailInput;
 
     @FindBy(id = "confirm")
@@ -31,7 +31,7 @@ public class SignUpPage extends CommonPageObject {
     private WebElement dayInput;
 
     private final Map<String, WebElement> inputFieldsMap = Map.of(
-            "Enter your email.", emailInput,
+            "Email address", emailInput,
             "Enter your email again.", confirmEmailInput,
             "Create a password.", passwordInput,
             "YYYY", yearInput,

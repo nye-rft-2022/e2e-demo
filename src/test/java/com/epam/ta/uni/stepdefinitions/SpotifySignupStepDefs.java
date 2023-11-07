@@ -64,6 +64,16 @@ public class SpotifySignupStepDefs {
                 Matchers.is(1));
     }
 
+    @And("^the \'(.*)\' error message of the \'(?:.*)\' (?:field|dropdown|radio buttons|checkbox) should be shown at banner$")
+    public void theErrorMessageShouldBeShownAtBanner(final String message) {
+        Awaitility.await(String.format("Element was not loaded in %s seconds", PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS))
+            .atMost(new Duration(PAGE_OR_ELEMENT_LOAD_WAIT_SECONDS, TimeUnit.SECONDS))
+            .until(() -> signUpPage.getWebDriverFromFactory().findElements(
+                By.xpath(String.format("//span[text()=\"%s\"]", message, message))
+                ).size(),
+                Matchers.is(1));
+    }
+
     @When("the {string} is filled in with {string}")
     public void theFieldIsFilledWithParameter(final String field, final String content) {
         signUpPage.getInputFieldByName(field).sendKeys(content);
